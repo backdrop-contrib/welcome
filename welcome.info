@@ -1,6 +1,6 @@
 type = module
-name = User Manual
-description = Welcome to Backdrop, some content and configuration to help you get started.
+name = Welcome Recipe
+description = Welcome to Backdrop, this module add some configuration and content to help you get started building a new site.
 package = Recipes
 backdrop = 1.x
 
@@ -9,5 +9,4 @@ dependencies[] = book
 dependencies[] = video_filter
 dependencies[] = content_view_access
 dependencies[] = mini_layouts
-
-stylesheets[all][] = css/user_manual.css	
+dependencies[] = user_guide_recipe

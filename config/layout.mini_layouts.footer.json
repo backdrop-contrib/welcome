@@ -69,12 +69,12 @@
                 "module": "block",
                 "delta": "contact_us",
                 "settings": {
-                    "title_display": "none",
-                    "title": "",
+                    "title_display": "default",
+                    "title": "Backdrop User Manual",
                     "style": "default",
                     "block_settings": {
                         "delta": "contact_us",
-                        "description": "Contact Us",
+                        "description": "Contact info in footer",
                         "reusable": true
                     },
                     "contexts": [],

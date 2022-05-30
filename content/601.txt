@@ -1,6 +1,8 @@
-<p>The Getting Started module was created to help site owners and site architects that are relatively new to Backdrop get a jump start on understanding the power of Backdrop and what it can do.&nbsp;</p>
+<p>The Welcome Recipe was created to help site owners and site architects that are relatively new to Backdrop get a jump start on understanding the power of Backdrop and what it can do.&nbsp;</p>
 
 <p>We've enabled and added some features to this site that will help you get started and learn more about how Backdrop CMS works.&nbsp;</p>
+
+<p><em>This module is intended to work on a relatively fresh Backdrop site with mostly default settings and content.&nbsp;</em></p>
 
 <p>Specifically, here is a list of the changes that this module has made to your site:</p>
 
@@ -17,3 +19,4 @@
 	<li>We add a "profile" field to user accounts and populate that field for the #1 user = admin.&nbsp;</li>
 	<li>We add a Tags view and place it in the right sidebar of every post or tag taxonomy page. This provides a quick way to find related content on the site.</li>
 </ol>
+

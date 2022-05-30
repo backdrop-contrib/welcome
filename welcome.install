@@ -2,8 +2,6 @@
 
 	function welcome_install() {
 
-		dpm('Now install content for welcome module.');
-
 		// Checking to see if "About" node still exists
 		$query = new EntityFieldQuery();
 	 	$entities = $query->entityCondition('entity_type', 'node')
@@ -166,11 +164,9 @@
 			  $about_mlid = $item['mlid'];
 			  // While here, fix the about alias
 			  $about = node_load($page->nid);
-			  dpm($about);
 			  $about->path['auto'] = FALSE;
 			  $about->path['alias'] = 'new-about';
 			  $about->save();
-			  dpm($about);
 			}
 
 			// Create menu items for children of About
@@ -182,7 +178,6 @@
 			    'plid' => $about_mlid,
 			  );
 			  menu_link_save($item);
-			  dpm($item);
 			}
 
 	    // Update the menu router information.

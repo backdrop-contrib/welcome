@@ -197,10 +197,6 @@
 		config_set('filter.format.filtered_html', 'filters.video_filter.weight', '-2');
 		config_set('filter.format.filtered_html', 'filters.filter_url.weight', '-1');
 
-
-		 // Rebuild permissions
-  	node_access_rebuild();
-
 		// Changing the text in the default post provided by standard install profile
   	$nodes = node_load_multiple(NULL, array("title" => "Your first post!"));
 		$node = current($nodes);

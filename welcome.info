@@ -10,3 +10,5 @@ dependencies[] = video_filter
 dependencies[] = content_view_access
 dependencies[] = mini_layouts
 dependencies[] = user_guide_recipe
+
+stylesheets[all][] = css/welcome.css

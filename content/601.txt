@@ -21,3 +21,4 @@
 	<li>We add a "profile" field to user accounts and populate that field for the #1 user = admin.&nbsp;</li>
 	<li>We add a Tags view and place it in the right sidebar of every post or tag taxonomy page. This provides a quick way to find related content on the site.</li>
 </ol>
+

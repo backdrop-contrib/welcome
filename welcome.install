@@ -58,7 +58,7 @@
 	      'tags' => array('Tools', 'Support'),
 	    ),
 	    '506' => array(
-	      'title' => st('Why Used Backdrop (The Video)'),
+	      'title' => st('Why Use Backdrop (The Video)'),
 	      'body' => '506',
 	      'type' => 'post',
 	      'promote' => '0',

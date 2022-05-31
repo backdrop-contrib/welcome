@@ -1,3 +1,9 @@
 <p>The administrative dashboard in Backdrop CMS is a great place to get started.</p>
 
 <p><img alt="" src="https://backdropcms.org/files/images/news/dashboard.png" /></p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://backdropcms.org/project/dashboard_plus">Dashboard Plus</a> is a contrib module created by the Simplo team that adds a few options to your Dashboard.</p>
+
+<p>[video:https://youtu.be/eHtoE0thKtY]&nbsp;</p>

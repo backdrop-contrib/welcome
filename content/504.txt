@@ -5,3 +5,9 @@
 	<li>The <a href="https://forum.backdropcms.org/">Backdrop CMS Forum</a>&nbsp;- we love to see folks ask questions in the forum, where answers are archived and available for other people in the future.</li>
 	<li><a href="https://github.com/backdrop/backdrop-issues/issues">Github core issue queue</a> - if you find a bug in Backdrop and are comfortable using Github, this is a great place to report an issue or see what is happening in core development.&nbsp;</li>
 </ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>[video:https://youtu.be/77LFLZ6Mitc]</p>

@@ -11,6 +11,9 @@
 	<li><a href="https://backdropcms.org/project/sample_animal_content">Sample Animal Content</a></li>
 </ul>
 
+<p>[video:https://youtu.be/vQyoecBLGFc]</p>
+
 <p><strong>NOTE: If you install a recipe, the only way to remove the content, content types, views, and fields that they create on your site is to manually delete them.</strong>&nbsp;</p>
 
 <p>&nbsp;</p>
+

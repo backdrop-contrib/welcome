@@ -274,5 +274,5 @@
 	  config_set('layout.layout.home', 'content.094cbc03-d088-4b3c-8361-977733540ae8.data.settings.image_path', '/files/hero/mountain-shadows.jpg');
 	  config_set('layout.layout.home', 'content.094cbc03-d088-4b3c-8361-977733540ae8.data.settings.title', 'Getting Started with Backdrop');
 
-	  backdrop_set_message('The User Guide module has installed some content on your site and enabled some contributed modules to help you better evaluate and test Backdrop CMS. You will need to manually delete any content that you do not wish to keep.', 'info');
+	  backdrop_set_message('The Welcome module has installed some content on your site and enabled some contributed modules to help you better evaluate and test Backdrop CMS. You will need to manually delete any content that you do not wish to keep.', 'info');
 	}

@@ -26,7 +26,9 @@
         "ca9e2cc8-eae9-46b7-bf37-559e666b5081--1": [
             "dbac0063-a1d2-4102-8b00-bfc784ea739d"
         ],
-        "0caeabcb-ff8f-4a90-8f46-700e298fb2ec--0": [],
+        "0caeabcb-ff8f-4a90-8f46-700e298fb2ec--0": [
+            "e3e3e6d7-a970-4671-8417-2369c9a2e228"
+        ],
         "0caeabcb-ff8f-4a90-8f46-700e298fb2ec--1": [],
         "0caeabcb-ff8f-4a90-8f46-700e298fb2ec--2": [],
         "title": []
@@ -46,7 +48,7 @@
                     "style": "default",
                     "block_settings": [],
                     "contexts": [],
-                    "content": "<p><em>This website has been populated with sample content that will help better evaluate Backdrop CMS and see what you can do.&nbsp;</em></p>\r\n",
+                    "content": "<p><em>This website has been populated with sample content that will help you better evaluate Backdrop CMS and see what it is capable of.&nbsp;</em></p>\r\n",
                     "format": "filtered_html",
                     "admin_label": "A message for the footer.",
                     "admin_description": ""
@@ -119,6 +121,32 @@
                     "admin_description": ""
                 },
                 "uuid": "dbac0063-a1d2-4102-8b00-bfc784ea739d",
+                "style": {
+                    "plugin": "default",
+                    "data": {
+                        "settings": {
+                            "classes": ""
+                        }
+                    }
+                }
+            }
+        },
+        "e3e3e6d7-a970-4671-8417-2369c9a2e228": {
+            "plugin": "system:powered-by",
+            "data": {
+                "status": 1,
+                "module": "system",
+                "delta": "powered-by",
+                "settings": {
+                    "title_display": "none",
+                    "title": "",
+                    "style": "default",
+                    "block_settings": [],
+                    "contexts": [],
+                    "admin_label": "",
+                    "admin_description": ""
+                },
+                "uuid": "e3e3e6d7-a970-4671-8417-2369c9a2e228",
                 "style": {
                     "plugin": "default",
                     "data": {

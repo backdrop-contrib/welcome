@@ -266,9 +266,9 @@
 	  config_set_multiple('layout.layout.user_manual', $block1 );
 
 	  // Puts block into footer of each layout
-	  config_set('layout.layout.home','positions.footer', array('d6903155-4ad7-46d3-9300-e628fd337f06', $uuid1 ));
-	  config_set('layout.layout.default','positions.footer', array('d6903155-4ad7-46d3-9300-e628fd337f06', $uuid1 ));
-	  config_set('layout.layout.user_manual','positions.footer', array('d6903155-4ad7-46d3-9300-e628fd337f06', $uuid1 ));
+	  config_set('layout.layout.home','positions.footer', array($uuid1));
+	  config_set('layout.layout.default','positions.footer', array($uuid1));
+	  config_set('layout.layout.user_manual','positions.footer', array($uuid1));
 
 	  // Changing image and title in hero block on front page
 	  config_set('layout.layout.home', 'content.094cbc03-d088-4b3c-8361-977733540ae8.data.settings.image_path', '/files/hero/mountain-shadows.jpg');

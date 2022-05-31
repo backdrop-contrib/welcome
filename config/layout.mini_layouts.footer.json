@@ -48,7 +48,7 @@
                     "style": "default",
                     "block_settings": [],
                     "contexts": [],
-                    "content": "<p><em>This website has been populated with sample content that will help you better evaluate Backdrop CMS and see what it is capable of.&nbsp;</em></p>\r\n",
+                    "content": "<p><em>This website has been populated with sample content that will help you better evaluate Backdrop CMS and see what it is capable of. For best results, try using this with the <a href=\"https://backdropcms.org/project/opera\">Opera theme</a>.&nbsp;</em></p>\r\n",
                     "format": "filtered_html",
                     "admin_label": "A message for the footer.",
                     "admin_description": ""

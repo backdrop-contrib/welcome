@@ -1,16 +1,25 @@
 # Welcome Module
 
+This module adds over twenty pieces of content, some images, and configuration to help you get started on your website. It also adds a new hero image on the home page. The content added is designed to help you better understand Backdrop CMS and it's features. This module also includes the [User Guide module](https://backdropcms.org/project/user_guide_recipe), which can be installed separately.
+
+## Audience (who is this for)
+
+This module might be useful in the following situations:
+- If you are new to Backdrop CMS and would like quickly spin up a new site with more content to help you find your way around the site and learn more about Backdrop. 
+- You can use this module as a quick start to a simple site. Enabling this module along with some additional Backdrop recipes is a quick way to get started with a site that you can then edit and customize as much as you wish. 
+- If you are building a contributed theme and would like to test your theme with some common and practical content. 
+
 ## Instructions
 
-The content of this module is currently in development, but you are free to download, install, and offer feedback. 
+This recipe can be installed like any other module. However, this module does contain configuration and content which can only be deleted manually. Before installing this on your own site, you might want to consider installing this on a [free Demo site at BackdropCMS.org](https://backdropcms.org/demo) (these demo sites only last 24 hours). 
 
-Enabling this module on a site will also require downloading and installing a couple of other modules. It would be best to experiment with this module on a test or sandbox environment as it will add a bunch of content and some content types, fields and views that can only be removed manually.
+This module requires the following modules:
+
+- [Video filter](https://backdropcms.org/project/video_filter)
+- [Mini layouts](https://backdropcms.org/project/mini_layouts)
+- [User guide recipe](https://backdropcms.org/project/user_guide_recipe)
 
 ## Details
-
-The Welcome module was created to help site owners and site architects that are relatively new to Backdrop get a jump start on understanding the power of Backdrop and what it can do. 
-
-We've enabled and added some features to this site that will help you get started and learn more about how Backdrop CMS works. 
 
 Specifically, here is a list of the changes that this module makes to your site:
 
@@ -25,26 +34,25 @@ Specifically, here is a list of the changes that this module makes to your site:
 - We add a "profile" field to user accounts and populate that field for the #1 user = admin. 
 - We add a Tags view and place it in the right sidebar of every post or tag taxonomy page. This provides a quick way to find related content on the site.
 
-Uninstall or Upgrade Options
-----------------------------
+## Uninstall or Upgrade Options
 
-It is not currently possible to uninstall or upgrade this recipe.
-If you no longer wish to keep this functionality, you will need 
-to remove the items added by the recipe manually.
+It is not currently possible to uninstall or upgrade this recipe. If you no longer wish to keep this functionality, you will need to remove the items added by the recipe manually.
 
+## Feedback
 
-Current Maintainers
--------------------
+We have been experimenting with a series of Recipe modules that can be used to add specific features or funcationality to your site. Recipes use existing core features and contributed modules to add funcationality and content to your site without adding new functionality that cannot already be found elsewhere.
+
+[We very much appreciate your feedback](https://github.com/backdrop-contrib/welcome/issues/2) on this and all of our recipes.
+
+## Current Maintainers
 
 - [Tim Erickson](https://github.com/stpaultim).
 
-Credits
--------
+## Credits
 
 - Sponsored by [Simplo](https://www.simplo.site)
 
-License
--------
+## License
 
 This project is GPL v2 software. 
 See the LICENSE.txt file in this directory for complete text.

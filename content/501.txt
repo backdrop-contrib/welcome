@@ -4,4 +4,8 @@
 
 <p>You can decide which types of content are able to be promoted and then decide which individual pieces of content you wish to promote. At this time, Posts are promoted by default, but you can change that setting in the Publishing settings on configuration page for each content type (<em>/admin/structure/types/manage/post</em>).</p>
 
+<p>&nbsp;</p>
+
+<p><img alt="" src="https://simplo.site/files/promote-content.png" /></p>
+
 <p>Try creating a new post and "promoting" it to the front page.&nbsp;</p>

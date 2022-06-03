@@ -1,0 +1,5 @@
+<p>This is a post.</p>
+
+<p>A <em>Post</em> is a type of content ideal for timely information about what is important to your organization. Press releases, news articles, and site announcements are often created as Posts. A Post will also display the date it was created, and the name of the person who created it.&nbsp;By default, a Post may include a comment form.</p>
+
+<p>The Welcome module includes a view of recent 'promoted' posts on the front page, a view of the five most recent pieces of content (including posts) in the footer, and a paginated view of all posts on the 'News' page.</p>

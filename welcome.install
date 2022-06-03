@@ -21,7 +21,33 @@
 		  node_save($page);
 		}
 
+		// Checking to see if "Your first post" node still exists
+		$query = new EntityFieldQuery();
+	 	$entities = $query->entityCondition('entity_type', 'node')
+	  	->propertyCondition('type', 'post')
+	  	->propertyCondition('title', 'Your first post!')
+	  	->propertyCondition('status', 1)
+	  	->range(0,1)
+	  	->execute();
+
+	  if (!empty($entities['node'])) {
+	    $about = node_load(array_shift(array_keys($entities['node'])));
+	  }
+	  // If default post still exists, unpublish it.
+		if (!empty($about)) {
+			$post = node_load($about->nid);
+		  $post->status = '0';
+		  node_save($post);
+		}
+
 		$pages = array(
+	    '500' => array(
+	      'title' => st('What are posts?'),
+	      'body' => '500',
+	      'type' => 'post',
+	      'promote' => '1',
+	      'tags' => array('Promoted Content','Posts'),
+	    ),
 	    '501' => array(
 	      'title' => st('Promoted Content'),
 	      'body' => '501',
@@ -196,15 +222,6 @@
 		config_set('filter.format.filtered_html', 'filters.filter_html.weight', '-3');
 		config_set('filter.format.filtered_html', 'filters.video_filter.weight', '-2');
 		config_set('filter.format.filtered_html', 'filters.filter_url.weight', '-1');
-
-		// Changing the text in the default post provided by standard install profile
-  	$nodes = node_load_multiple(NULL, array("title" => "Your first post!"));
-		$node = current($nodes);
-		$content = file_get_contents($module_path . '/content/post.txt');
-		$node->body[LANGUAGE_NONE][0]['value'] = $content;
-		$node->created = time() - '2600000';
-		node_save($node);
-
 
 		// Prepping new image to use in hero block of front page.
 		$field_image_dir = 'public://hero';

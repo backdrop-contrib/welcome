@@ -1,6 +1,8 @@
 <?php
 
 	function welcome_install() {
+	  global $user;
+	  $current_uid = $user->uid;
 
 		// Checking to see if "About" node still exists
 		$query = new EntityFieldQuery();
@@ -160,7 +162,7 @@
 	            ),
 	          ),
 	        ),
-	        'uid' => 1,
+	        'uid' => $current_uid,
 	        'promote' => $info['promote'],
 	        'status' => 1,
 	        'type' => $info['type'],
@@ -235,14 +237,13 @@
   	$file = entity_create('file', array(
       'filename' => 'mountain-shadows.jpg',
       'uri' => $moved_file,
-      'uid' => 1,
+      'uid' => $current_uid,
     ));
     $file->save();
 
 
-    // We added a profile field to user accounts
-    // This adds some default content to user #1 profile page
-    $user_account = user_load('1');
+    // Add default content to the current user's profile page.
+    $user_account = user_load($current_uid);
     $content = file_get_contents($module_path . '/content/user.txt');
     $user_account->field_profile[LANGUAGE_NONE][0]['value'] = $content;
     $user_account->field_profile[LANGUAGE_NONE][0]['format'] = 'filtered_html';

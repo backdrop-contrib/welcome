@@ -12,7 +12,8 @@
 	  	->execute();
 
 	  if (!empty($entities['node'])) {
-	    $about = node_load(array_shift(array_keys($entities['node'])));
+	    $nids = array_keys($entities['node']);
+	    $about = node_load(array_shift($nids));
 	  }
 	  // If About page exists, unpublish it.
 		if (!empty($about)) {
@@ -31,7 +32,8 @@
 	  	->execute();
 
 	  if (!empty($entities['node'])) {
-	    $about = node_load(array_shift(array_keys($entities['node'])));
+	    $nids = array_keys($entities['node']);
+	    $about = node_load(array_shift($nids));
 	  }
 	  // If default post still exists, unpublish it.
 		if (!empty($about)) {
@@ -196,7 +198,7 @@
 			}
 
 			// Create menu items for children of About
-	    if ($info['menu_parent'] == 'about') {
+	    if (isset($info['menu_parent']) && $info['menu_parent'] == 'about') {
 			  $item = array(
 			    'link_path' => 'node/' . $page->nid,
 			    'link_title' => $page->title,
@@ -213,7 +215,7 @@
 	  // END new nodes section
 
 		$format = filter_format_load('filtered_html');
-		$format->filters['video_filter'] = (object) $FILTER_ARRAY;
+		$format->filters['video_filter'] = (object) array();
 		filter_format_save($format);
 
 		// Make sure filters are in the correct order

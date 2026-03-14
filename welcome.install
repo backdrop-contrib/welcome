@@ -129,7 +129,7 @@
 	  foreach ($pages as $page) {
 	  	$page = $page['tags'];
 	  	foreach ($page as $tag) {
-	  		if (!in_array($tag, $new_terms)) {
+	  		if (!empty($tag) && !in_array($tag, $new_terms)) {
 			  	array_push($new_terms, $tag);
 	  		}
 	  	}
@@ -172,6 +172,7 @@
 	    // Find tid for each new term and add term to node
 	    $term_key = '0';
 	    foreach ($info['tags'] as $page_tag) {
+	    	if (empty($page_tag)) { continue; }
 	    	$temp_tag = taxonomy_term_load_multiple_by_name($page_tag, 'tags');
 	    	$term_tid = array_keys($temp_tag);
 				$page->field_tags['und'][$term_key++]['tid'] = $term_tid[0];
@@ -278,12 +279,10 @@
 	  // Adds block to layouts
 	  config_set_multiple('layout.layout.home', $block1 );
 	  config_set_multiple('layout.layout.default', $block1 );
-	  config_set_multiple('layout.layout.user_manual', $block1 );
 
 	  // Puts block into footer of each layout
 	  config_set('layout.layout.home','positions.footer', array($uuid1));
 	  config_set('layout.layout.default','positions.footer', array($uuid1));
-	  config_set('layout.layout.user_manual','positions.footer', array($uuid1));
 
 	  // Changing image and title in hero block on front page
 	  config_set('layout.layout.home', 'content.094cbc03-d088-4b3c-8361-977733540ae8.data.settings.image_path', '/files/hero/mountain-shadows.jpg');

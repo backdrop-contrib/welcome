@@ -9,3 +9,8 @@ dependencies[] = mini_layouts
 dependencies[] = user_guide_recipe
 
 stylesheets[all][] = css/welcome.css
+
+; Added by Backdrop CMS packaging script on 2022-06-02
+project = welcome
+version = 1.x-1.0.5
+timestamp = 1654222546
